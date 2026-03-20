@@ -18,7 +18,7 @@ $white    = [System.Drawing.Color]::FromArgb(210, 228, 255)
 $sectionBg = [System.Drawing.Color]::FromArgb(9,  15,  30)
 
 $form = New-Object Windows.Forms.Form
-$form.Text            = "NearScreensharing Tool"
+$form.Text            = "Exovia hile kontrol yardımcısı"
 $form.Size            = New-Object System.Drawing.Size(480, 300)
 $form.MinimumSize     = New-Object System.Drawing.Size(480, 300)
 $form.MaximumSize     = New-Object System.Drawing.Size(480, 300)
@@ -30,7 +30,7 @@ $form.MaximizeBox     = $false
 $form.GetType().GetProperty("DoubleBuffered",[System.Reflection.BindingFlags]"Instance,NonPublic").SetValue($form,$true,$null)
 
 try {
-    $iconUrl    = "https://raw.githubusercontent.com/diamondclass/Near-SS/refs/heads/main/nearss.webp"
+    $iconUrl    = "https://raw.githubusercontent.com/yigitboi07/Exovia-ss/refs/heads/main/exovialogo.webp"
     $wc         = New-Object System.Net.WebClient
     $wc.Headers.Add("User-Agent","Mozilla/5.0")
     $iconBytes  = $wc.DownloadData($iconUrl)
@@ -56,7 +56,7 @@ $form.Add_Paint({
 })
 
 $lblTitle = New-Object Windows.Forms.Label
-$lblTitle.Text      = "NearScreensharing"
+$lblTitle.Text      = "Exovia"
 $lblTitle.Font      = New-Object System.Drawing.Font("Segoe UI", 22, [System.Drawing.FontStyle]::Bold)
 $lblTitle.ForeColor = $white
 $lblTitle.BackColor = [System.Drawing.Color]::Transparent
@@ -66,7 +66,7 @@ $form.Controls.Add($lblTitle)
 $lblTitle.Location = New-Object System.Drawing.Point([int](($form.ClientSize.Width - $lblTitle.Width) / 2), 72)
 
 $lblSub = New-Object Windows.Forms.Label
-$lblSub.Text      = "by diamondclass  -  Version Beta 0.1.0"
+$lblSub.Text      = "by yigitboi07  -  Version Beta 0.1.0"
 $lblSub.Font      = New-Object System.Drawing.Font("Segoe UI", 9, [System.Drawing.FontStyle]::Regular)
 $lblSub.ForeColor = $dimText
 $lblSub.BackColor = [System.Drawing.Color]::Transparent
@@ -76,7 +76,7 @@ $form.Controls.Add($lblSub)
 $lblSub.Location = New-Object System.Drawing.Point([int](($form.ClientSize.Width - $lblSub.Width) / 2), 130)
 
 $btnScan = New-Object Windows.Forms.Button
-$btnScan.Text      = "Scan"
+$btnScan.Text      = "Tarama"
 $btnScan.Font      = New-Object System.Drawing.Font("Segoe UI", 10, [System.Drawing.FontStyle]::Bold)
 $btnScan.ForeColor = $white
 $btnScan.BackColor = $accent
@@ -141,7 +141,7 @@ $panelDone.Visible   = $false
 $form.Controls.Add($panelDone)
 
 $lblDoneIcon = New-Object Windows.Forms.Label
-$lblDoneIcon.Text      = "[OK]"
+$lblDoneIcon.Text      = "[Bitti]"
 $lblDoneIcon.Font      = New-Object System.Drawing.Font("Segoe UI", 20, [System.Drawing.FontStyle]::Bold)
 $lblDoneIcon.ForeColor = $ok
 $lblDoneIcon.BackColor = [System.Drawing.Color]::Transparent
@@ -162,7 +162,7 @@ $lblDoneMsg.TextAlign = "MiddleCenter"
 $panelDone.Controls.Add($lblDoneMsg)
 
 $btnOpenFolder = New-Object Windows.Forms.Button
-$btnOpenFolder.Text      = "Abrir en Explorer"
+$btnOpenFolder.Text      = "Konumunu aç"
 $btnOpenFolder.Font      = New-Object System.Drawing.Font("Segoe UI", 9, [System.Drawing.FontStyle]::Bold)
 $btnOpenFolder.ForeColor = $white
 $btnOpenFolder.BackColor = [System.Drawing.Color]::FromArgb(14, 50, 100)
@@ -177,7 +177,7 @@ $btnOpenFolder.Add_MouseLeave({ $btnOpenFolder.BackColor = [System.Drawing.Color
 $panelDone.Controls.Add($btnOpenFolder)
 
 $btnSSTool = New-Object Windows.Forms.Button
-$btnSSTool.Text      = "SS Alliance Tool"
+$btnSSTool.Text      = "SS Yardımcısı"
 $btnSSTool.Font      = New-Object System.Drawing.Font("Segoe UI", 9, [System.Drawing.FontStyle]::Bold)
 $btnSSTool.ForeColor = $white
 $btnSSTool.BackColor = [System.Drawing.Color]::FromArgb(16, 65, 145)
@@ -212,7 +212,7 @@ $white    = [System.Drawing.Color]::FromArgb(210, 228, 255)
 $sectionBg = [System.Drawing.Color]::FromArgb(9,  15,  30)
 
 $form = New-Object Windows.Forms.Form
-$form.Text            = "NearScreensharing Tool"
+$form.Text            = "Exovia hile kontrol yardımcısı"
 $form.Size            = New-Object System.Drawing.Size(480, 300)
 $form.MinimumSize     = New-Object System.Drawing.Size(480, 300)
 $form.MaximumSize     = New-Object System.Drawing.Size(480, 300)
@@ -250,7 +250,7 @@ $form.Add_Paint({
 })
 
 $lblTitle = New-Object Windows.Forms.Label
-$lblTitle.Text      = "NearScreensharing"
+$lblTitle.Text      = "Exovia"
 $lblTitle.Font      = New-Object System.Drawing.Font("Segoe UI", 22, [System.Drawing.FontStyle]::Bold)
 $lblTitle.ForeColor = $white
 $lblTitle.BackColor = [System.Drawing.Color]::Transparent
@@ -260,7 +260,7 @@ $form.Controls.Add($lblTitle)
 $lblTitle.Location = New-Object System.Drawing.Point([int](($form.ClientSize.Width - $lblTitle.Width) / 2), 72)
 
 $lblSub = New-Object Windows.Forms.Label
-$lblSub.Text      = "by diamondclass  -  Version Beta 0.1.0"
+$lblSub.Text      = "by yigitboi07  -  Version Beta 0.1.0"
 $lblSub.Font      = New-Object System.Drawing.Font("Segoe UI", 9, [System.Drawing.FontStyle]::Regular)
 $lblSub.ForeColor = $dimText
 $lblSub.BackColor = [System.Drawing.Color]::Transparent
@@ -270,7 +270,7 @@ $form.Controls.Add($lblSub)
 $lblSub.Location = New-Object System.Drawing.Point([int](($form.ClientSize.Width - $lblSub.Width) / 2), 108)
 
 $btnScan = New-Object Windows.Forms.Button
-$btnScan.Text      = "Scan"
+$btnScan.Text      = "Tarama"
 $btnScan.Font      = New-Object System.Drawing.Font("Segoe UI", 10, [System.Drawing.FontStyle]::Bold)
 $btnScan.ForeColor = $white
 $btnScan.BackColor = $accent
@@ -335,7 +335,7 @@ $panelDone.Visible   = $false
 $form.Controls.Add($panelDone)
 
 $lblDoneIcon = New-Object Windows.Forms.Label
-$lblDoneIcon.Text      = "[OK]"
+$lblDoneIcon.Text      = "[Bitti]"
 $lblDoneIcon.Font      = New-Object System.Drawing.Font("Segoe UI", 20, [System.Drawing.FontStyle]::Bold)
 $lblDoneIcon.ForeColor = $ok
 $lblDoneIcon.BackColor = [System.Drawing.Color]::Transparent
@@ -356,7 +356,7 @@ $lblDoneMsg.TextAlign = "MiddleCenter"
 $panelDone.Controls.Add($lblDoneMsg)
 
 $btnOpenFolder = New-Object Windows.Forms.Button
-$btnOpenFolder.Text      = "Abrir en Explorer"
+$btnOpenFolder.Text      = "Konumunu aç"
 $btnOpenFolder.Font      = New-Object System.Drawing.Font("Segoe UI", 9, [System.Drawing.FontStyle]::Bold)
 $btnOpenFolder.ForeColor = $white
 $btnOpenFolder.BackColor = [System.Drawing.Color]::FromArgb(14, 50, 100)
@@ -371,7 +371,7 @@ $btnOpenFolder.Add_MouseLeave({ $btnOpenFolder.BackColor = [System.Drawing.Color
 $panelDone.Controls.Add($btnOpenFolder)
 
 $btnSSTool = New-Object Windows.Forms.Button
-$btnSSTool.Text      = "SS Alliance Tool"
+$btnSSTool.Text      = "SS Yardımcısı"
 $btnSSTool.Font      = New-Object System.Drawing.Font("Segoe UI", 9, [System.Drawing.FontStyle]::Bold)
 $btnSSTool.ForeColor = $white
 $btnSSTool.BackColor = [System.Drawing.Color]::FromArgb(16, 65, 145)
