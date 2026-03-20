@@ -224,7 +224,7 @@ $form.MaximizeBox     = $false
 $form.GetType().GetProperty("DoubleBuffered",[System.Reflection.BindingFlags]"Instance,NonPublic").SetValue($form,$true,$null)
 
 try {
-    $iconUrl    = "https://raw.githubusercontent.com/diamondclass/Near-SS/refs/heads/main/58224ef09abe1a0b4a4e35fc32c477fb.webp"
+    $iconUrl    = ""
     $wc         = New-Object System.Net.WebClient
     $wc.Headers.Add("User-Agent","Mozilla/5.0")
     $iconBytes  = $wc.DownloadData($iconUrl)
@@ -947,7 +947,7 @@ body{display:flex;flex-direction:column;}
 
 <div class="topbar">
   <div>
-    <div class="tb-logo">Near<span>Screensharing</span> Tool</div>
+    <div class="tb-logo">Exovia<span>Hile Kontrol</span> Tool</div>
     <div class="tb-sub">by diamondclass &mdash; Beta 0.1.0 &mdash; $scanDate</div>
   </div>
   <div class="tb-badge" style="color:$badgeColor;border-color:${badgeColor}35;background:${badgeColor}0d;">
@@ -971,8 +971,8 @@ body{display:flex;flex-direction:column;}
 
   <main class="content" id="main-content">
     <div class="hero">
-      <div class="hero-title">Near<span>Screensharing</span> Tool</div>
-      <div class="hero-sub">Automated screenshare scan &mdash; $scanDate</div>
+      <div class="hero-title">Exovia<span>Hile Kontrol</span> Tool</div>
+      <div class="hero-sub">Automated hile kontrol sonucu &mdash; $scanDate</div>
       <div class="meta-grid">
         <div class="meta-cell"><div class="meta-l">Date</div><div class="meta-v">$scanDate</div></div>
         <div class="meta-cell"><div class="meta-l">User</div><div class="meta-v">$scanUser</div></div>
@@ -1013,8 +1013,8 @@ body{display:flex;flex-direction:column;}
 </div>
 
 <div class="footer">
-  <span>NearScreensharing Tool &mdash; $scanDate &mdash; by diamondclass</span>
-  <span>Confidential screenshare report</span>
+  <span>Exovia hile kontrol aracı &mdash; $scanDate &mdash; by diamondclass</span>
+  <span>Confidential hile kontrol </span>
 </div>
 
 <script>
@@ -1511,7 +1511,7 @@ $btnSSTool.Add_Click({
 
 $timer = New-Object System.Windows.Forms.Timer
 $timer.Interval = 1000
-$timer.Add_Tick({ $form.Text = "NearScreensharing Tool  -  $(Get-Date -Format 'HH:mm:ss')" })
+$timer.Add_Tick({ $form.Text = "Exovia hile kontrol aracı  -  $(Get-Date -Format 'HH:mm:ss')" })
 $timer.Start()
 
 [void]$form.ShowDialog()
