@@ -30,7 +30,7 @@ $form.MaximizeBox     = $false
 $form.GetType().GetProperty("DoubleBuffered",[System.Reflection.BindingFlags]"Instance,NonPublic").SetValue($form,$true,$null)
 
 try {
-    $iconUrl    = "https://raw.githubusercontent.com/diamondclass/Near-SS/refs/heads/main/nearss.webp"
+    $iconUrl    = "https://raw.githubusercontent.com/yigitboi07/Exovia-ss/refs/heads/main/exovia.webp"
     $wc         = New-Object System.Net.WebClient
     $wc.Headers.Add("User-Agent","Mozilla/5.0")
     $iconBytes  = $wc.DownloadData($iconUrl)
